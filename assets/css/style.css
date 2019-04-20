@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    background-image: url("../images/dynamic-style.png")
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#header-container {
+    width: 965px;
+    margin: 15px auto;
+    border: none;
+}
+
+header {
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 40px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: white;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+    top: 34px;
+}
+
+nav {
+    float: right;
+    position: relative;
+    right: 20px;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 5px;
+    border-right: 1px solid #777777;
+}
+
+#remove-right-border {
+    border-right: none;
+}
+
+main {
+    height: 100%;
+}
+
+#main-container {
+    background-color: #ffffff;
+    width: 960px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+section p {
+    line-height: 1.5em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    padding: 10px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-size: 30px;
+    width: 130px;
+    padding: 30px;
+}
+
+hr {
+    border-color: #666666;
+    width: 90%;
+    border-width: .5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#index-image {
+    float: left;
+    margin: 20px;
+}
+
+footer {
+    background-color: #666666;
+    text-align: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+}
+
+footer p {
+    padding: 30px;
+    margin: 0;
+}
+
+/* portfolio.html styles */
+
+.portfolio-area {
+    background-color: #ffffff;
+    width: 960px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+.image-container {
+    display: inline-block;
+    margin: 5px;
+    width: 180px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.desc-box {
+    padding: 13px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    position: relative;
+    bottom: 50px;
+}
+
+/* form.html styles */
+
+#form-area {
+    background-color: #ffffff;
+    width: 960px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+.form-wrapper {
+    padding: 20px;
+    width: 900px;
+    margin: auto;
+}
+
+label {
+    font-size: 24px;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #4aaaa5;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 980px) {
+
+    #header-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        margin: 0;
+        width: 100%;
+    }
+
+    h1 {
+        margin-left: 40px;
+        top: 41px;
+    }
+
+    /* main - for all pages */
+
+    main {
+        margin-top: 100px;
+    }
+
+    /* index.html */
+
+    #main-container {
+        width: 70%;
+        margin-left: 40px;
+    }
+
+    h2 {
+        width: 200px;
+    }
+
+    /* portfolio.html */
+
+    .portfolio-area {
+        width: 80%;
+    }
+
+    /* form.html */
+
+    #form-area {
+        width: 80%;
+    } 
+    
+    .form-wrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 25px;
+        width: 300px;
+        padding: 20px;
+        top: 37px;
+    }
+}
+
+    @media only screen and (max-width: 640px) {
+
+        body {
+            overflow: scroll;
+        }
+
+        h1 {
+            width: 100%;
+            margin: 0;
+            top: 0;
+        }
+
+        nav {
+            float: none;
+            padding: 10px;
+            text-align: center;
+            right: 0;
+        }
+
+         /* footer */
+
+        footer p {
+            padding: 15px;
+        }
+
+        /* index.html */
+
+        #main-container {
+            width: 100%;
+            margin: 0;
+        }
+
+        #index-image {
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        p {
+            clear: left;
+            overflow: auto;
+        }
+
+        /* portfolio.html */
+
+        .portfolio-area {
+            width: 100%;
+        }
+
+        .image-container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        /* form.html */
+
+        #form-area {
+            width: 100%;
+        }
+
+
+    }
+
+
+
+
