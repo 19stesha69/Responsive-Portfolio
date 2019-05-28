@@ -128,6 +128,10 @@ footer p {
     height: auto;
 }
 
+.image-container a {
+    border-right: none;
+}
+
 .desc-box {
     padding: 13px;
     font-size: 14px;
@@ -136,6 +140,7 @@ footer p {
     color: #ffffff;
     position: relative;
     bottom: 50px;
+    left: 5px;
 }
 
 /* form.html styles */
