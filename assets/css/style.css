@@ -16,7 +16,6 @@ body {
 header {
     height: 100px;
     background-color: #ffffff;
-    border-bottom: 1px solid #cccccc;
 }
 
 h1 {
@@ -126,11 +125,17 @@ footer p {
     margin: auto;
     position: relative;
     top: 20px;
+    text-align: center;
+}
+
+.project-container {
+    width: 90%;
+    margin: auto;
 }
 
 .image-container {
     display: inline-block;
-    margin: 5px;
+    margin: 10px;
     width: 180px;
 }
 
@@ -150,7 +155,7 @@ footer p {
     background-color: #4aaaa5;
     color: #ffffff;
     position: relative;
-    bottom: 50px;
+    bottom: 40px;
     left: 5px;
 }
 
