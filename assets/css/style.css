@@ -61,7 +61,7 @@ main {
     top: 20px;
 }
 
-section p {
+#index-content p {
     line-height: 1.5em;
     padding: 10px;
 }
@@ -231,6 +231,7 @@ input[type=submit] {
 
     #page-title {
         width: 200px;
+        text-align: center;
     }
 
     /* portfolio.html */
@@ -295,12 +296,17 @@ input[type=submit] {
         #index-image {
             float: none;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
+            margin: auto;
+            width: 70%;
         }
 
-        p {
+        #index-content h3 {
+            text-align: center;
+            margin-top: 15px;
+            padding: 0 10px;
+        }
+
+        #index-content p {
             clear: left;
             overflow: auto;
         }
@@ -309,13 +315,6 @@ input[type=submit] {
 
         .portfolio-area {
             width: 100%;
-        }
-
-        .image-container {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
         }
 
         /* form.html */
